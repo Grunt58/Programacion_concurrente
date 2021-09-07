@@ -18,15 +18,16 @@ public class Main {
         // TODO code application logic here
         
 
-        Alumno alumno, alumno2, alumno3;
+        Alumno alumno, alumno2, alumno3;//Se crean variables a partir de la clase Alumno
         alumno = new Alumno();
         alumno2 = new Alumno();
-        alumno3 = new Alumno();
+
         
         System.out.println("Capturando datos de los alumnos");
         alumno.capturar();
         alumno2.capturar();
-        alumno3.capturar();
+        alumno3 = new Alumno("Juanito", 12, 32); // Se crea el objeto de alumno3
+        
         
         System.out.println("Información de los alumnos");
         alumno.listar();

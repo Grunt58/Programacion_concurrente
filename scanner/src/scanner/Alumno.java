@@ -19,13 +19,23 @@ public class Alumno {
     
     //CONTRUCTORES
     
+    public Alumno(){
+        System.out.println("Se ha creado un objeto de tipo Alumno...");
+    }
+    public Alumno(String nombre, int cta, int edad){
+        System.out.println("Se ha creado un objeto de tipo Alumno usando el segundo constructor");
+        this.nombre = nombre;
+        cuenta = cta;
+        this.edad = edad;
+    }
+    
     //MÉTODOS
     public void capturar(){
-        System.out.println("Nombre: ");
+        System.out.print("Nombre: ");
         nombre = sc.nextLine();
-        System.out.println("Cuenta: ");
+        System.out.print("Cuenta: ");
         cuenta = sc.nextInt();
-        System.out.println("Edad: ");
+        System.out.print("Edad: ");
         edad = sc.nextInt();
     }
     
