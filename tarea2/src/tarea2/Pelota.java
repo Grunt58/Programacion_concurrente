@@ -7,9 +7,7 @@ package tarea2;
 
 /**
  *
- * @author Jorge Tirado Uriza
- * Josue Ignacio Robles Mendoza
- * Leonardo Hernandez Cuevas
+ * @author null
  */
 public class Pelota {
     

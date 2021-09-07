@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tarea2;
+package practica2_calculadora;
 
 /**
  *
@@ -16,20 +16,6 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        
-        Pelota pelota_1 = new Pelota();
-        Pelota pelota_2 = new Pelota();
-        Pelota pelota_3 = new Pelota();
-        
-        pelota_1.basquet();
-        pelota_1.listar();
-        
-        pelota_2.football();
-        pelota_2.listar();
-        
-        pelota_3.pelota();
-        pelota_3.listar();
     }
     
 }
