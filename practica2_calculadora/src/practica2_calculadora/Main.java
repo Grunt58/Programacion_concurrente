@@ -21,7 +21,6 @@ public class Main {
         //cal.sumar();
         
         cal.restar(3, 6);
-        cal.imprimirOp();
     }
     
 }

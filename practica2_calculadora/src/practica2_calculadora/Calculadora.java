@@ -17,6 +17,10 @@ public class Calculadora {
     private float res;
     private Scanner input = new Scanner(System.in);
     
+    private void imprimirOp(){
+        System.out.println("La resta de " + n1 + " y " + n2 + " es: " + res);
+    }
+    
     void sumar(){
         System.out.print("Número 1: ");
         n1 = input.nextFloat();
@@ -33,9 +37,8 @@ public class Calculadora {
         this.res = res;
         
         res = n2 - n1;
+        
+        imprimirOp();
     }
     
-    void imprimirOp(){
-        System.out.println("La resta de " + n1 + " y " + n2 + " es: " + res);
-    }
 }
