@@ -5,20 +5,24 @@
  */
 package practica2_calculadora;
 
+import java.util.Scanner;
+
 /**
  *
- * @author null
+ * @author Jorge Tirado Uriza
  */
 public class Calculadora {
-    private float num1;
-    private float num2;
+    private float n1;
+    private float n2;
+    private Scanner input = new Scanner(System.in);
     
     void Sumar(){
-        num1 = 1;
-        num2 = 2;
+        System.out.print("Número 1: ");
+        n1 = input.nextFloat();
+        System.out.print("Número 2: ");
+        n2 = input.nextFloat();
+        float n3 = n1 + n2;
         
-        float num3 = num1 + num2;
-        
-        System.out.println("La suma de "+ num1 + " y " + num2 + " es: " + num3);
+        System.out.println("La suma de "+ n1 + " y " + n2 + " es: " + n3);
     }
 }

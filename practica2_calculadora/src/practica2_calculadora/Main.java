@@ -7,7 +7,7 @@ package practica2_calculadora;
 
 /**
  *
- * @author null
+ * @author Jorge Tirado Uriza
  */
 public class Main {
 
