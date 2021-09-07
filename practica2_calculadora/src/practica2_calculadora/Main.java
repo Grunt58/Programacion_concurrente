@@ -18,7 +18,10 @@ public class Main {
         // TODO code application logic here
         Calculadora cal = new Calculadora();
         
-        cal.Sumar();
+        //cal.sumar();
+        
+        cal.restar(3, 6);
+        cal.imprimirOp();
     }
     
 }
