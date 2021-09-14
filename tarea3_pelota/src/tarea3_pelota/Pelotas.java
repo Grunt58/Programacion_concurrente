@@ -1,7 +1,3 @@
-//Tarea 3
-//Equipo 8
-//Elaborado por Erik Barrera
-
 package tarea3_pelota;
 
 import java.util.Scanner;
