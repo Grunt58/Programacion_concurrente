@@ -40,4 +40,19 @@ public class Calculadora {
         imprimirOp();
     }
     
+    float multiplicar(){
+        // Lectura de datos
+        System.out.print("Número 1: ");
+        n1 = input.nextFloat();
+        System.out.print("Número 2: ");
+        n2 = input.nextFloat();
+        
+        // Multiplicar los valores
+        res = n1 * n2;
+        
+        // Retorna el resultado
+        return res;
+        
+    }
+    
 }

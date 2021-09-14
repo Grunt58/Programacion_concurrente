@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package practica2_calculadora;
-
+import java.util.Scanner;
 /**
  *
  * @author null
@@ -16,11 +16,30 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        
+        // Creación del objeto calculadora
         Calculadora cal = new Calculadora();
         
-        //cal.sumar();
+        // Variables
+        int a,b;
+        float res;
         
-        cal.restar(3, 6);
+        // Invocar método sumar
+        cal.sumar();
+        
+        // Pedimos valores para pasarlos al método restar
+        System.out.print("Valor 1: ");
+        a = input.nextInt();
+        System.out.print("Valor 2: ");
+        b = input.nextInt();
+        
+        // Invocamos al método y pasamos variables
+        cal.restar(a, b);
+        
+        // Igualamos la variable "res" a la respuesta del método multiplicar gracias al return
+        res = cal.multiplicar();
+        System.out.println("El resultado de la multiplicación es " + res);
     }
     
 }
