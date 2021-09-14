@@ -5,7 +5,7 @@
  */
 package practica2_calculadora;
 import java.util.Scanner;
-/**
+/*
  *
  * @author null
  */
@@ -40,6 +40,11 @@ public class Main {
         // Igualamos la variable "res" a la respuesta del método multiplicar gracias al return
         res = cal.multiplicar();
         System.out.println("El resultado de la multiplicación es " + res);
+        
+        // Invocamos al método dividir
+        cal.dividir();
+        // Imprimimos el retorno del método getN1, getN2 y getRes
+        System.out.println(cal.getN1() + " / " + cal.getN2() + " = " + cal.getRes());
     }
     
 }

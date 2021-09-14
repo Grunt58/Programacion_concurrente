@@ -7,7 +7,7 @@ package practica2_calculadora;
 
 import java.util.Scanner;
 
-/**
+/*
  *
  * @author null
  */
@@ -53,6 +53,38 @@ public class Calculadora {
         // Retorna el resultado
         return res;
         
+    }
+    
+    public void dividir(){
+        // Lectura de datos
+        System.out.print("Número 1: ");
+        n1 = input.nextFloat();
+        System.out.print("Número 2: ");
+        n2 = input.nextFloat();
+        
+        // Verificamos si cualquier valor es igual a cero
+        // 0.0f es para convertir a float
+        if (n1 == 0.0f || n2 == 0.0f){
+            System.out.print("División por cero...");
+            n1 = 1;
+            n2 = 1;
+        }
+        
+        // Dividimos los valores
+        res = n1 / n2;
+    }
+    
+    // getters
+    float getN1(){
+        return n1;
+    }
+    
+    float getN2(){
+        return n2;
+    }
+    
+    float getRes(){
+        return res;
     }
     
 }
