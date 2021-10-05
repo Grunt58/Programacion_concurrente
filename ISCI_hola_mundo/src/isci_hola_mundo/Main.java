@@ -2,7 +2,7 @@ package isci_hola_mundo;
 
 /**
  *
- * @author Jorge Tirado Uriza
+ * @author null
  */
 public class Main {
 
