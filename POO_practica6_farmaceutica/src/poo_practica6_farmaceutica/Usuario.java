@@ -2,7 +2,7 @@ package poo_practica6_farmaceutica;
 import java.util.Scanner;
 /**
  *
- * @author Jorge Tirado Uriza
+ * @author null
  */
 public class Usuario {
 
@@ -45,6 +45,6 @@ public class Usuario {
     
     // MÉTODOS  
     public String MostrarUsuario() {
-        return "Nombre: " + nombre + "|| edad: " + edad + "|| [No. Cuenta: " + noCuenta + "]";   
+        return "Nombre: " + nombre + " || edad: " + edad + " || [No. Cuenta: " + noCuenta + "]";   
     }
 }

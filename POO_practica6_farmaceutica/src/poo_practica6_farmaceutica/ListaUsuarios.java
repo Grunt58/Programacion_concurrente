@@ -7,10 +7,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 /**
  *
- * @author Jorge Tirado Uriza
+ * @author null
  */
 public class ListaUsuarios {
-    // Array para la clase usuarios
+    // Array para la los objetos usuarios
     ArrayList <Usuario> listaUsuarios = new ArrayList<Usuario>();
     
     // Scanner
@@ -177,7 +177,6 @@ public class ListaUsuarios {
         }
         // Limpiamos el buffer
         input.nextLine();
-
     }
 
     public void MostrarLista() {
