@@ -7,7 +7,7 @@ package poo_herencia_polimorfirsmo_12_10_21;
 
 /**
  *
- * @author Joreg Tirado Uriza
+ * @author null
  */
 public class MainReinoAnimal {
 

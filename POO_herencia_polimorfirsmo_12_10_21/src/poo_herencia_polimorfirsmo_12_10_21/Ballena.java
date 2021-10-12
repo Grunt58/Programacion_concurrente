@@ -7,7 +7,7 @@ package poo_herencia_polimorfirsmo_12_10_21;
 
 /**
  *
- * @author GAMER
+ * @author null
  */
 public class Ballena extends Animal{
     // Atributos

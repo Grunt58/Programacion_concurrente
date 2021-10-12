@@ -7,7 +7,7 @@ package poo_herencia_polimorfirsmo_12_10_21;
 
 /**
  *
- * @author Jorge Tirado Uriza
+ * @author null
  */
 public class Gato extends Animal{
     // Atributos
