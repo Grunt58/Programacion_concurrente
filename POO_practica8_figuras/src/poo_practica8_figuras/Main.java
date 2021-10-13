@@ -3,9 +3,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author
-
- * 
+ * @author null
  */
 public class Main {
 
@@ -37,8 +35,8 @@ public class Main {
             switch(op){
                 case 1:
                     cuad.LeerDatos();
-                    cuad.calcularperímetro();
-                    cuad.calculararea();
+                    cuad.CalcularPerímetro();
+                    cuad.CalcularArea();
                     break;
                     
                 case 2:

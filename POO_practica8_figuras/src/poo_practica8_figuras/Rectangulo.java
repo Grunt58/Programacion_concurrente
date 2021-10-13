@@ -2,8 +2,7 @@ package poo_practica8_figuras;
 
 /**
  *
- * @author 
-
+ * @author null
  */
 public class Rectangulo extends Figura{
     // Atributos
@@ -12,7 +11,7 @@ public class Rectangulo extends Figura{
     // Métodos
     public void LeerDatos(){
         super.LeerDatos();
-        nombre = "Cuadrado";
+        nombre = "Rectángulo";
         System.out.println(nombre);
         System.out.print("Ingrese el valor del Lado A: ");
         ladoA = input.nextDouble();

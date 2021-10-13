@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author 
-
+ * @author null
  */
 public class Figura {
     // Atributos
@@ -15,6 +14,6 @@ public class Figura {
  
     // Métodos
     public void LeerDatos(){
-        System.out.println("Datos de la figura: ");
+        System.out.print("Datos de la figura: ");
     }
 }

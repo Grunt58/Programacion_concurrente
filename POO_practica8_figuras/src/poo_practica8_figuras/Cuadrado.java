@@ -2,8 +2,7 @@ package poo_practica8_figuras;
 
 /**
  *
- * @author 
-
+ * @author null
  */
 public class Cuadrado extends Figura{
     // Atributo
@@ -14,16 +13,16 @@ public class Cuadrado extends Figura{
         super.LeerDatos();
         nombre = "Cuadrado";
         System.out.println(nombre);
-        System.out.println("Ingrese numero de lados:");
+        System.out.print("Ingrese valor de lados: ");
         lado = input.nextDouble();
     }
 
-    public void calcularperímetro(){
+    public void CalcularPerímetro(){
         perimetro = lado * 4;
         System.out.println("Perímetro: " + perimetro + "m");
     }
 
-    public void calculararea(){
+    public void CalcularArea(){
         area = lado * lado;
         System.out.println("Área: " + area + "m2");
      }
