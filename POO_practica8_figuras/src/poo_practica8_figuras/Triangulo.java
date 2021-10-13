@@ -1,14 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package poo_practica8_figuras;
+import static java.lang.Math.sqrt;
+import java.util.Scanner;
 
 /**
  *
  * @author null
  */
-public class Triangulo {
+public class Triangulo extends Figura{
+    // Atributos
+    Scanner input = new Scanner(System.in);
+    private double lado;
     
+    // Métodos
+    public void LeerDatos(){
+        super.LeerDatos();
+        nombre = "Cuadrado";
+        System.out.println(nombre);
+        System.out.print("Lado: ");
+        lado = input.nextDouble();
+    }
+    
+    public void CalcularPerimetro(){
+        perimetro = lado*3;
+        System.out.println("Perímetro: " + perimetro);
+    }
+    
+    public void CalcularArea(){
+        area = (sqrt(3)/4) * (lado*lado);
+        System.out.println("Área: " + area);
+    }
 }

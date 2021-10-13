@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package poo_practica8_figuras;
 
 /**
@@ -10,5 +5,12 @@ package poo_practica8_figuras;
  * @author null
  */
 public class Figura {
-    
+    // Atributos
+    protected double area, perimetro;
+    protected String nombre;
+ 
+    // Métodos
+    public void LeerDatos(){
+        System.out.println("Datos de la figura: ");
+    }
 }
