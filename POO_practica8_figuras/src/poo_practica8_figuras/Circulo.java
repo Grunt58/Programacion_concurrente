@@ -1,15 +1,15 @@
 package poo_practica8_figuras;
 import static java.lang.Math.PI;
-import java.util.Scanner;
+import static java.lang.Math.pow;
 
 /**
  *
- * @author null
+ * @author 
+
  */
 public class Circulo extends Figura{
     // Atributos
     private double radio;
-    Scanner input = new Scanner(System.in);
     
     // Métodos
     public void LeerDatos(){
@@ -22,11 +22,11 @@ public class Circulo extends Figura{
     
     public void CalcularPerimetro(){
         perimetro = (2*PI)*radio;
-        System.out.println("Perímetro: " + perimetro);
+        System.out.println("Perímetro: " + perimetro + "m");
     }
     
     public void CalcularArea(){
-        area = PI*(radio*radio);
-        System.out.println("Área: " + area);
+        area = (Math.pow(radio, 2))*PI;
+        System.out.println("Área: " + area + "m2");
     }    
 }

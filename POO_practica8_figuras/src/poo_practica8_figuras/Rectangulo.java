@@ -1,14 +1,13 @@
 package poo_practica8_figuras;
-import java.util.Scanner;
 
 /**
  *
- * @author null
+ * @author 
+
  */
 public class Rectangulo extends Figura{
     // Atributos
     private double ladoA, ladoB;
-    Scanner input = new Scanner(System.in);
     
     // Métodos
     public void LeerDatos(){
@@ -24,11 +23,11 @@ public class Rectangulo extends Figura{
     
     public void CalcularPerimetro(){
         perimetro = ladoA*2 + ladoB*2;
-        System.out.println("Perímetro: " + perimetro);
+        System.out.println("Perímetro: " + perimetro + "m");
     }
     
     public void CalcularArea(){
         area = ladoA*ladoB;
-        System.out.println("Área: " + area);
+        System.out.println("Área: " + area + "m2");
     }
 }

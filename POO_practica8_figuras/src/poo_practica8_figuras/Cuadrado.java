@@ -1,14 +1,13 @@
 package poo_practica8_figuras;
-import java.util.Scanner;
 
 /**
  *
- * @author null
+ * @author 
+
  */
 public class Cuadrado extends Figura{
     // Atributo
     private double lado;
-    Scanner sc = new Scanner(System.in);
     
     // Métodos
     public void LeerDatos(){
@@ -16,16 +15,16 @@ public class Cuadrado extends Figura{
         nombre = "Cuadrado";
         System.out.println(nombre);
         System.out.println("Ingrese numero de lados:");
-        lado = sc.nextDouble();
+        lado = input.nextDouble();
     }
 
     public void calcularperímetro(){
         perimetro = lado * 4;
-        System.out.println("Perímetro: "+ perimetro);
+        System.out.println("Perímetro: " + perimetro + "m");
     }
 
     public void calculararea(){
         area = lado * lado;
-        System.out.println("Área: " + area);
+        System.out.println("Área: " + area + "m2");
      }
 }

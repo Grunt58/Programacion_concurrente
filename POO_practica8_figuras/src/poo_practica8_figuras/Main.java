@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 /**
  *
- * @author null
+ * @author
+
  * 
  */
 public class Main {
