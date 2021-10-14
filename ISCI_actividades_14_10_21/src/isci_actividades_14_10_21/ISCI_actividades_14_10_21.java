@@ -14,6 +14,7 @@ public class ISCI_actividades_14_10_21 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         
+        /*
         // Reactivación
         // Constantes
         double g_verde=20.33, g_roja=22.90, g_negra=19.25;
@@ -119,6 +120,21 @@ public class ISCI_actividades_14_10_21 {
             System.out.println("IVA 16%: " + String.format("%.2f", gas_iva));
             System.out.println("Total a pagar: " + String.format("%.2f", total));
             System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
+        }
+        */
+        
+        
+        //  Estructuras de repetición
+        
+        // Actividad 1 - while
+        int i = 1;
+        
+        System.out.print("Ingrese un número: ");
+        int n = input.nextInt();
+        
+        while(i <= n){
+            System.out.println("El número " + i + " de " + n);
+            i++;
         }
     }   
 }
