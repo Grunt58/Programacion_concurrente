@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Jorge Tirado Uriza
+ * @author null
  */
 public class Main {
 
