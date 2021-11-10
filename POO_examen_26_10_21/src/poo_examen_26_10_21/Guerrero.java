@@ -26,6 +26,7 @@ public class Guerrero extends Personaje{
     }
     
     // Métodos
+    @Override
     public void alimentarse(int energiaNueva){
         super.alimentarse(energiaNueva);
         System.out.println("Guerrero[ energía anterior " + getEnergiaA() + " energia actual " + getEnergia()+"]");
