@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 import java.util.ArrayList;
 /*
  *
- * @author Jorge Tirado Uriza
+ * @author null
  */
 public class Taller {
     // ArrayList Para los 3 tipos de motores

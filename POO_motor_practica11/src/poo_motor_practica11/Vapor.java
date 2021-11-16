@@ -3,7 +3,7 @@ import java.util.Random;
 
 /*
  *
- * @author Jorge Tirado Uriza
+ * @author null
  */
 public class Vapor extends Motor{
     // Atributos

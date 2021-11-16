@@ -2,7 +2,7 @@ package poo_motor_practica11;
 import java.util.Random;
 /*
  *
- * @author Jorge Tirado Uriza
+ * @author null
  */
 public class Motor {
     // Atributos
