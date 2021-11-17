@@ -31,6 +31,10 @@ public class Main {
         taller.recibirMotor(mElectrico);
         taller.recibirMotor(mExplosion);
         taller.recibirMotor(mVapor);
+        
+        taller.diagnosticar(mElectrico);
+        taller.diagnosticar(mExplosion);
+        taller.diagnosticar(mVapor);
     }
     
 }

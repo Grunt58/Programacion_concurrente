@@ -41,7 +41,7 @@ public class MotorElectrico extends Motor{
         
         corriente = Integer.parseInt(JOptionPane.showInputDialog(null, "Corriente:", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
         
-        numeroDevandados = Integer.parseInt(JOptionPane.showInputDialog(null, "Número de vanados:", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
+        numeroDevandados = Integer.parseInt(JOptionPane.showInputDialog(null, "Número devanados:", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
     }
 
     @Override
@@ -52,5 +52,12 @@ public class MotorElectrico extends Motor{
     @Override
     public void listarInformacion(){
         JOptionPane.showMessageDialog(null, toString(), "Tirado, motor", JOptionPane.DEFAULT_OPTION);
+    }
+    
+    @Override
+    public String seleccionaFalla(){
+        String [] fallas = {"torque", "Velocidad de Giro", "Voltaje", "Corriente", "Número Devanados"};
+        String respuesta = (String)JOptionPane.showInputDialog(null, "Tirado, Selecciona falla:", "Fallas", JOptionPane.DEFAULT_OPTION, null, fallas, fallas[0]);
+        return respuesta;
     }
 }

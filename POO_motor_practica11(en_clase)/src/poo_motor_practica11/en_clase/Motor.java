@@ -22,4 +22,8 @@ public class Motor {
     public void listarInformacion(){
         JOptionPane.showMessageDialog(null, toString(), "Tirado, motor", JOptionPane.DEFAULT_OPTION);
     }
+    
+    public String seleccionaFalla(){
+        return "";
+    }
 }

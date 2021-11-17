@@ -5,6 +5,8 @@
  */
 package poo_motor_practica11.en_clase;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author null
@@ -18,5 +20,10 @@ public class Taller {
         } else if(motor instanceof MotorVapor){
             System.out.println("Se recibió motor de vapor");
         }
+    }
+    
+    public void diagnosticar(Motor motor){
+        String respuesta = motor.seleccionaFalla();
+        JOptionPane.showMessageDialog(null, respuesta, "Tirado taller", JOptionPane.DEFAULT_OPTION);
     }
 }

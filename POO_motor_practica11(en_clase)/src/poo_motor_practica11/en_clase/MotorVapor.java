@@ -53,6 +53,13 @@ public class MotorVapor extends Motor{
     @Override
     public void listarInformacion(){
         JOptionPane.showMessageDialog(null, toString(), "Tirado, motor", JOptionPane.DEFAULT_OPTION);
-    }            
+    }
+    
+    @Override
+    public String seleccionaFalla(){
+        String [] fallas = {"torque", "Velocidad de Giro", "Presión de trabajo", "Temperatura de caldera", "Combustible"};
+        String respuesta = (String)JOptionPane.showInputDialog(null, "Tirado, Selecciona falla:", "Fallas", JOptionPane.DEFAULT_OPTION, null, fallas, fallas[0]);
+        return respuesta;
+    }
     
 }
