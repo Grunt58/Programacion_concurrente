@@ -2,7 +2,7 @@ package poo_motor_practica11.en_clase;
 
 /**
  *
- * @author null
+ * @author Jorge Tirado Uriza
  */
 public class Main {
 
@@ -16,7 +16,21 @@ public class Main {
         MotorExplosion mExplosion = new MotorExplosion();
         MotorVapor mVapor = new MotorVapor();
         
+        mElectrico.capturarDatos();
+        System.out.println(mElectrico.toString());
+        mElectrico.listarInformacion();
+        
+        mExplosion.capturarDatos();
+        System.out.println(mExplosion.toString());
+        mExplosion.listarInformacion();
+        
+        mVapor.capturarDatos();
+        System.out.println(mVapor.toString());
+        mVapor.listarInformacion();
+        
         taller.recibirMotor(mElectrico);
+        taller.recibirMotor(mExplosion);
+        taller.recibirMotor(mVapor);
     }
     
 }
