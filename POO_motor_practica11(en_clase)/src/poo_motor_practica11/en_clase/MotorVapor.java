@@ -9,7 +9,21 @@ import javax.swing.JOptionPane;
 public class MotorVapor extends Motor{
     private int presionTrabajo, temperaturaCaldera;
     private String tipoCombustible;
+    protected String[] combustibles={
+        "Alternativo",
+        "Rotativo"
+    };
 
+    public MotorVapor() {
+        this.fallas = new String[]{
+            "Torque",
+            "Velocidad de giro",
+            "Presión de Trabajo",
+            "Temperatura de Caldera",
+            "Tipo de combustible"
+        };
+    }
+    
     public int getPresionTrabajo() {
         return presionTrabajo;
     }
@@ -40,14 +54,27 @@ public class MotorVapor extends Motor{
         
         presionTrabajo = Integer.parseInt(JOptionPane.showInputDialog(null, "Presión de trabajo:", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
         
-        temperaturaCaldera = Integer.parseInt(JOptionPane.showInputDialog(null, "Temperatura de caldera:", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
+        while(true){
+            temperaturaCaldera = Integer.parseInt(JOptionPane.showInputDialog(null, "Temperatura de caldera (120-200C°):", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
+            if(temperaturaCaldera < 120 || temperaturaCaldera > 240){
+                JOptionPane.showMessageDialog(null, "La temperatura de caldera no debe ser menor a 120 o mayor a 200", "Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+                break;
+            }
+        }
         
-        tipoCombustible = JOptionPane.showInputDialog(null, "Combustible:", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE);
+        tipoCombustible = (String)JOptionPane.showInputDialog(null, "Tirado, Selecciona combustible:", "Combustible", JOptionPane.DEFAULT_OPTION, null, combustibles, combustibles[0]);
     }
     
     @Override
     public String toString() {
-        return "MotorVapor" +super.toString()+ "\npresionTrabajo=" + presionTrabajo + "\ntemperaturaCaldera=" + temperaturaCaldera + "\ntipoCombustible=" + tipoCombustible;
+        return "----------------------------"
+               + "\nMotor: \"Vapor\""
+               + super.toString()
+               + "\nPresión de trabajo: " + presionTrabajo
+               + "\nTemperatura de caldera: " + temperaturaCaldera + "Grados Celsius"
+               + "\nTipo de combustible: " + tipoCombustible
+               + "\n----------------------------";
     }
     
     @Override
@@ -57,9 +84,7 @@ public class MotorVapor extends Motor{
     
     @Override
     public String seleccionaFalla(){
-        String [] fallas = {"torque", "Velocidad de Giro", "Presión de trabajo", "Temperatura de caldera", "Combustible"};
-        String respuesta = (String)JOptionPane.showInputDialog(null, "Tirado, Selecciona falla:", "Fallas", JOptionPane.DEFAULT_OPTION, null, fallas, fallas[0]);
+        String respuesta = (String)JOptionPane.showInputDialog(null, "Tirado, Selecciona falla:", "Fallas (Vapor)", JOptionPane.DEFAULT_OPTION, null, fallas, fallas[0]);
         return respuesta;
-    }
-    
+    }   
 }

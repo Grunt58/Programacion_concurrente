@@ -36,5 +36,4 @@ public class Main {
         taller.diagnosticar(mExplosion);
         taller.diagnosticar(mVapor);
     }
-    
 }

@@ -9,6 +9,16 @@ import javax.swing.JOptionPane;
 public class MotorElectrico extends Motor{
     private int voltaje, corriente, numeroDevandados;
 
+    public MotorElectrico() {
+        this.fallas = new String[]{
+            "Torque",
+            "Velocidad de giro",
+            "Voltaje",
+            "Corriente",
+            "Número de devandados"
+        };
+    }
+    
     public int getVoltaje() {
         return voltaje;
     }
@@ -36,17 +46,43 @@ public class MotorElectrico extends Motor{
     @Override
     public void capturarDatos(){
         super.capturarDatos();
+        while(true){
+            voltaje = Integer.parseInt(JOptionPane.showInputDialog(null, "Voltaje (120V o 240V):", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE)); 
+            if(voltaje < 120 || voltaje > 240){
+                 JOptionPane.showMessageDialog(null, "El voltaje no debe ser menor a 120V o mayor a 240V", "Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+                break;
+            }
+        }
         
-        voltaje = Integer.parseInt(JOptionPane.showInputDialog(null, "Voltaje:", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
+        while(true){
+            corriente = Integer.parseInt(JOptionPane.showInputDialog(null, "Corriente (1-8 Amperes):", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
+            if(corriente < 1 || corriente > 8){
+                JOptionPane.showMessageDialog(null, "La corriente no debe ser menor a 1 o mayor a 8", "Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+                break;
+            }
+        }
         
-        corriente = Integer.parseInt(JOptionPane.showInputDialog(null, "Corriente:", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
-        
-        numeroDevandados = Integer.parseInt(JOptionPane.showInputDialog(null, "Número devanados:", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
+        while(true){
+            numeroDevandados = Integer.parseInt(JOptionPane.showInputDialog(null, "Número de devanados (8-12):", "Tirado, Información del motor", JOptionPane.QUESTION_MESSAGE));
+            if(numeroDevandados < 8 || numeroDevandados > 12){
+                JOptionPane.showMessageDialog(null, "El número de devanados no debe ser menor a 8 o mayor a 12", "Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+                break;
+            }
+        }
     }
 
     @Override
     public String toString() {
-        return "MotorElectrico" +super.toString()+ "\nvoltaje=" + voltaje + "\ncorriente=" + corriente + "\nnumeroDevandados=" + numeroDevandados;
+        return "----------------------------"
+                + "\nMotor: Electrico"
+                + super.toString()
+                + "\nVoltaje: " + voltaje + "V"
+                + "\nCorriente: " + corriente + " Amperes"
+                + "\nNúmero de devanados: " + numeroDevandados
+                + "\n----------------------------";
     }
     
     @Override
@@ -56,8 +92,7 @@ public class MotorElectrico extends Motor{
     
     @Override
     public String seleccionaFalla(){
-        String [] fallas = {"torque", "Velocidad de Giro", "Voltaje", "Corriente", "Número Devanados"};
-        String respuesta = (String)JOptionPane.showInputDialog(null, "Tirado, Selecciona falla:", "Fallas", JOptionPane.DEFAULT_OPTION, null, fallas, fallas[0]);
+        String respuesta = (String)JOptionPane.showInputDialog(null, "Tirado, Selecciona falla:", "Fallas (Eléctrico)", JOptionPane.DEFAULT_OPTION, null, fallas, fallas[0]);
         return respuesta;
     }
 }
