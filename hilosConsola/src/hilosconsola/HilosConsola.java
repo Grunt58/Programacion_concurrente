@@ -13,9 +13,9 @@ public class HilosConsola {
             
             switch(opc){
                 case 1:
-                    for(int i=0;i<=25000;i++){
-                        System.out.println("Ascendente "+i);
-                    }
+                    Ascendente hilo1;
+                    hilo1=new Ascendente();
+                    hilo1.start();
                     break;
                 case 2:
                     for(int i=25000;i>=0;i--){
